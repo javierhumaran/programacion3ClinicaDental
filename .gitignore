@@ -4,3 +4,5 @@
 *.jar
 *.war
 *.ear
+/clinicaDental/build/
+/clinicaDental/dist/
