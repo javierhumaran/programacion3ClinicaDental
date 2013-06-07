@@ -28,9 +28,8 @@ public class AdministrarClientes extends javax.swing.JFrame {
 
         botonClientes = new javax.swing.JButton();
         labelClientes = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        panelClientes = new javax.swing.JScrollPane();
         tablaClientes = new javax.swing.JTable();
-        botonInformacion = new javax.swing.JButton();
         botonSalir = new javax.swing.JButton();
         botonEliminarCliente = new javax.swing.JButton();
         botonAgregarCliente = new javax.swing.JButton();
@@ -44,7 +43,7 @@ public class AdministrarClientes extends javax.swing.JFrame {
             }
         });
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("Clientes");
         setResizable(false);
 
@@ -58,28 +57,28 @@ public class AdministrarClientes extends javax.swing.JFrame {
         tablaClientes.setForeground(new java.awt.Color(102, 102, 102));
         tablaClientes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Javier Antonio", "Humarán Peñuñuri",  new Integer(20),  new Integer(4)},
-                {"José Ángel ", "Solano Kirk",  new Integer(19),  new Integer(7)},
-                {"Victor Manuel", "Martínez Ayala",  new Integer(23),  new Integer(2)},
-                {"Juan José ", "Pérez López",  new Integer(36),  new Integer(12)},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {"Javier Antonio", "Humarán Peñuñuri",  new Integer(20),  new Integer(4),  new Double(1234.2)},
+                {"José Ángel ", "Solano Kirk",  new Integer(19),  new Integer(7),  new Double(233.5)},
+                {"Victor Manuel", "Martínez Ayala",  new Integer(23),  new Integer(2),  new Double(3443.3)},
+                {"Juan José ", "Pérez López",  new Integer(36),  new Integer(12),  new Double(344.4)},
+                {null, null, null, null,  new Double(44433.4)},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "Nombre", "Apellidos", "Edad", "Consultas"
+                "Nombre (s)", "Apellidos", "Edad", "Consultas", "Deuda"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class
+                java.lang.String.class, java.lang.String.class, java.lang.Integer.class, java.lang.Integer.class, java.lang.Double.class
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -90,16 +89,9 @@ public class AdministrarClientes extends javax.swing.JFrame {
         tablaClientes.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         tablaClientes.setEditingColumn(0);
         tablaClientes.setEditingRow(0);
+        tablaClientes.setRowHeight(20);
         tablaClientes.setSelectionBackground(new java.awt.Color(153, 153, 153));
-        jScrollPane1.setViewportView(tablaClientes);
-
-        botonInformacion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazUsuario/img/Informacion.png"))); // NOI18N
-        botonInformacion.setPreferredSize(new java.awt.Dimension(73, 73));
-        botonInformacion.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botonInformacionActionPerformed(evt);
-            }
-        });
+        panelClientes.setViewportView(tablaClientes);
 
         botonSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazUsuario/img/Salir (1).png"))); // NOI18N
         botonSalir.setPreferredSize(new java.awt.Dimension(73, 73));
@@ -140,40 +132,34 @@ public class AdministrarClientes extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(botonHistorial, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(botonAgregarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(botonEliminarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(botonSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane1)
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(labelClientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(459, 459, 459))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(botonHistorial, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(botonInformacion, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(botonAgregarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(botonEliminarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(botonSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(labelClientes)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(panelClientes, javax.swing.GroupLayout.DEFAULT_SIZE, 677, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(botonSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(labelClientes)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(botonInformacion, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(botonEliminarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botonAgregarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botonHistorial, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(labelClientes)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(panelClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botonSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonHistorial, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonEliminarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonAgregarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -184,10 +170,6 @@ public class AdministrarClientes extends javax.swing.JFrame {
     private void botonClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonClientesActionPerformed
         
     }//GEN-LAST:event_botonClientesActionPerformed
-
-    private void botonInformacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonInformacionActionPerformed
-        
-    }//GEN-LAST:event_botonInformacionActionPerformed
 
     private void botonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonSalirActionPerformed
         dispose();
@@ -202,11 +184,12 @@ public class AdministrarClientes extends javax.swing.JFrame {
     private void botonAgregarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonAgregarClienteActionPerformed
         AgregarCliente nuevoCliente = new AgregarCliente();
         nuevoCliente.setVisible(true);
-        dispose();
     }//GEN-LAST:event_botonAgregarClienteActionPerformed
 
     private void botonHistorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonHistorialActionPerformed
-        // TODO add your handling code here:
+        HistorialCliente abrirHistorial = new HistorialCliente();
+        abrirHistorial.setVisible(true);
+        dispose();
     }//GEN-LAST:event_botonHistorialActionPerformed
 
     /**
@@ -248,10 +231,9 @@ public class AdministrarClientes extends javax.swing.JFrame {
     private javax.swing.JButton botonClientes;
     private javax.swing.JButton botonEliminarCliente;
     private javax.swing.JButton botonHistorial;
-    private javax.swing.JButton botonInformacion;
     private javax.swing.JButton botonSalir;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel labelClientes;
+    private javax.swing.JScrollPane panelClientes;
     private javax.swing.JTable tablaClientes;
     // End of variables declaration//GEN-END:variables
 }

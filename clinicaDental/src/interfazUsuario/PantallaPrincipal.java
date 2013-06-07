@@ -135,6 +135,11 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         botonCerrarSesion.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         botonCerrarSesion.setForeground(new java.awt.Color(102, 102, 102));
         botonCerrarSesion.setText("Cerrar Sesión");
+        botonCerrarSesion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonCerrarSesionActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -199,7 +204,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void botonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonSalirActionPerformed
-        dispose();
+        System.exit(0);
     }//GEN-LAST:event_botonSalirActionPerformed
 
     private void botonClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonClientesActionPerformed
@@ -211,11 +216,13 @@ public class PantallaPrincipal extends javax.swing.JFrame {
     private void botonConsultasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonConsultasActionPerformed
         AdministrarConsultas abrirConsultas = new AdministrarConsultas();
         abrirConsultas.setVisible(true);
+        dispose();
     }//GEN-LAST:event_botonConsultasActionPerformed
 
     private void botonIngresosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonIngresosActionPerformed
         AdministrarIngresos abrirIngresos = new AdministrarIngresos();
         abrirIngresos.setVisible(true);
+        dispose();
     }//GEN-LAST:event_botonIngresosActionPerformed
 
     private void botonMaterialesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonMaterialesActionPerformed
@@ -227,6 +234,12 @@ public class PantallaPrincipal extends javax.swing.JFrame {
         AdministrarReportes abrirReportes = new AdministrarReportes();
         abrirReportes.setVisible(true);
     }//GEN-LAST:event_botonReportesActionPerformed
+
+    private void botonCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonCerrarSesionActionPerformed
+        Login login = new Login();
+        login.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_botonCerrarSesionActionPerformed
 
     /**
      * @param args the command line arguments

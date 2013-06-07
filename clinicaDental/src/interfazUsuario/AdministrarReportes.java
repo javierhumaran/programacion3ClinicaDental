@@ -26,21 +26,193 @@ public class AdministrarReportes extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        botonPeriodico = new javax.swing.JButton();
+        botonGeneral = new javax.swing.JButton();
+        botonRecursos = new javax.swing.JButton();
+        botonActividades = new javax.swing.JButton();
+        botonTrabajos = new javax.swing.JButton();
+        labelPeriodico = new javax.swing.JLabel();
+        labelGeneral = new javax.swing.JLabel();
+        labelRecursos = new javax.swing.JLabel();
+        labelActividades = new javax.swing.JLabel();
+        labelTrabajos = new javax.swing.JLabel();
+        labelAbonos = new javax.swing.JLabel();
+        botonSalir = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Reportes");
+        setResizable(false);
+
+        botonPeriodico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazUsuario/img/RepotePeriodico.png"))); // NOI18N
+        botonPeriodico.setPreferredSize(new java.awt.Dimension(73, 73));
+        botonPeriodico.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonPeriodicoActionPerformed(evt);
+            }
+        });
+
+        botonGeneral.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazUsuario/img/ReporteGeneral.png"))); // NOI18N
+        botonGeneral.setPreferredSize(new java.awt.Dimension(73, 73));
+        botonGeneral.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonGeneralActionPerformed(evt);
+            }
+        });
+
+        botonRecursos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazUsuario/img/ReporteRecursos.png"))); // NOI18N
+        botonRecursos.setPreferredSize(new java.awt.Dimension(73, 73));
+        botonRecursos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonRecursosActionPerformed(evt);
+            }
+        });
+
+        botonActividades.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazUsuario/img/ReporteActividades.png"))); // NOI18N
+        botonActividades.setPreferredSize(new java.awt.Dimension(73, 73));
+        botonActividades.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonActividadesActionPerformed(evt);
+            }
+        });
+
+        botonTrabajos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazUsuario/img/ReporteAbonos.png"))); // NOI18N
+        botonTrabajos.setPreferredSize(new java.awt.Dimension(73, 73));
+        botonTrabajos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonTrabajosActionPerformed(evt);
+            }
+        });
+
+        labelPeriodico.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        labelPeriodico.setForeground(new java.awt.Color(102, 102, 102));
+        labelPeriodico.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelPeriodico.setText("Periódico");
+
+        labelGeneral.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        labelGeneral.setForeground(new java.awt.Color(102, 102, 102));
+        labelGeneral.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelGeneral.setText("General");
+
+        labelRecursos.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        labelRecursos.setForeground(new java.awt.Color(102, 102, 102));
+        labelRecursos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelRecursos.setText("Recursos");
+
+        labelActividades.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        labelActividades.setForeground(new java.awt.Color(102, 102, 102));
+        labelActividades.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelActividades.setText("Actividades");
+
+        labelTrabajos.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        labelTrabajos.setForeground(new java.awt.Color(102, 102, 102));
+        labelTrabajos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelTrabajos.setText("Trabajos");
+
+        labelAbonos.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        labelAbonos.setForeground(new java.awt.Color(102, 102, 102));
+        labelAbonos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelAbonos.setText("y Abonos");
+
+        botonSalir.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        botonSalir.setForeground(new java.awt.Color(102, 102, 102));
+        botonSalir.setText("Salir");
+        botonSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonSalirActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botonPeriodico, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                    .addComponent(labelPeriodico, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botonGeneral, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                    .addComponent(labelGeneral, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botonRecursos, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                    .addComponent(labelRecursos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(labelActividades, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(botonActividades, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE))
+                .addGap(20, 20, 20)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botonTrabajos, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                    .addComponent(labelTrabajos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(20, 20, 20))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(498, 498, 498)
+                .addComponent(labelAbonos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(botonSalir)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(botonTrabajos, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonActividades, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonRecursos, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonPeriodico, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonGeneral, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelPeriodico)
+                    .addComponent(labelGeneral)
+                    .addComponent(labelRecursos)
+                    .addComponent(labelActividades)
+                    .addComponent(labelTrabajos))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(labelAbonos)
+                .addGap(18, 18, 18)
+                .addComponent(botonSalir)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void botonPeriodicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonPeriodicoActionPerformed
+        NuevoReporte abrirReporte = new NuevoReporte();
+        abrirReporte.setVisible(true);
+    }//GEN-LAST:event_botonPeriodicoActionPerformed
+
+    private void botonGeneralActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonGeneralActionPerformed
+        NuevoReporte abrirReporte = new NuevoReporte();
+        abrirReporte.setVisible(true);
+    }//GEN-LAST:event_botonGeneralActionPerformed
+
+    private void botonRecursosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonRecursosActionPerformed
+        NuevoReporte abrirReporte = new NuevoReporte();
+        abrirReporte.setVisible(true);
+    }//GEN-LAST:event_botonRecursosActionPerformed
+
+    private void botonActividadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonActividadesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botonActividadesActionPerformed
+
+    private void botonTrabajosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonTrabajosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botonTrabajosActionPerformed
+
+    private void botonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonSalirActionPerformed
+        PantallaPrincipal nuevoPrincipal = new PantallaPrincipal();
+        nuevoPrincipal.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_botonSalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -77,5 +249,17 @@ public class AdministrarReportes extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botonActividades;
+    private javax.swing.JButton botonGeneral;
+    private javax.swing.JButton botonPeriodico;
+    private javax.swing.JButton botonRecursos;
+    private javax.swing.JButton botonSalir;
+    private javax.swing.JButton botonTrabajos;
+    private javax.swing.JLabel labelAbonos;
+    private javax.swing.JLabel labelActividades;
+    private javax.swing.JLabel labelGeneral;
+    private javax.swing.JLabel labelPeriodico;
+    private javax.swing.JLabel labelRecursos;
+    private javax.swing.JLabel labelTrabajos;
     // End of variables declaration//GEN-END:variables
 }

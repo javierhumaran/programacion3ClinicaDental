@@ -26,21 +26,468 @@ public class AdministrarIngresos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        panelIngresos = new javax.swing.JTabbedPane();
+        panelTodos = new javax.swing.JPanel();
+        contenedorTablaTodos = new javax.swing.JScrollPane();
+        tablaClientes = new javax.swing.JTable();
+        labelIngresosTotales = new javax.swing.JLabel();
+        panelPeriodo = new javax.swing.JPanel();
+        contenedorTablaPeriodo = new javax.swing.JScrollPane();
+        tablaPeriodo = new javax.swing.JTable();
+        labelIngresosDesde = new javax.swing.JLabel();
+        campoTextoDesde = new javax.swing.JTextField();
+        labelHasta = new javax.swing.JLabel();
+        campoTextoHasta = new javax.swing.JTextField();
+        botonOk = new javax.swing.JButton();
+        panelCliente = new javax.swing.JPanel();
+        labelIngresosCliente = new javax.swing.JLabel();
+        contenedorTablaCliente = new javax.swing.JScrollPane();
+        tablaCliente = new javax.swing.JTable();
+        comboCliente = new javax.swing.JComboBox();
+        panelTrabajo = new javax.swing.JPanel();
+        labelIngresosTrabajo = new javax.swing.JLabel();
+        comboTrabajo = new javax.swing.JComboBox();
+        contenedorTablaTrabajo = new javax.swing.JScrollPane();
+        tablaTrabajo = new javax.swing.JTable();
+        botonSalir = new javax.swing.JButton();
+        panelTotalIngresos = new javax.swing.JPanel();
+        labelTotal = new javax.swing.JLabel();
+        campoTextoTotal = new javax.swing.JTextField();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setTitle("Ingresos");
+        setResizable(false);
+
+        panelIngresos.setFont(new java.awt.Font("Roboto", 0, 11)); // NOI18N
+
+        panelTodos.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        panelTodos.setName("Todos"); // NOI18N
+
+        tablaClientes.setAutoCreateRowSorter(true);
+        tablaClientes.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        tablaClientes.setForeground(new java.awt.Color(102, 102, 102));
+        tablaClientes.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Javier Antonio", "Humarán Peñuñuri", "12/02/1993",  new Double(1234.2)},
+                {"José Ángel ", "Solano Kirk", "31/12/2012",  new Double(233.5)},
+                {"Victor Manuel", "Martínez Ayala", "24/03/1997",  new Double(3443.3)},
+                {"Juan José ", "Pérez López", "06/08/2011",  new Double(344.4)},
+                {null, null, null,  new Double(44433.4)},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Nombre (s)", "Apellidos", "Fecha", "Cantidad"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Double.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        tablaClientes.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
+        tablaClientes.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tablaClientes.setEditingColumn(0);
+        tablaClientes.setEditingRow(0);
+        tablaClientes.setRowHeight(20);
+        tablaClientes.setSelectionBackground(new java.awt.Color(153, 153, 153));
+        contenedorTablaTodos.setViewportView(tablaClientes);
+
+        labelIngresosTotales.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        labelIngresosTotales.setForeground(new java.awt.Color(102, 102, 102));
+        labelIngresosTotales.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelIngresosTotales.setText("Ingresos Totales");
+        labelIngresosTotales.setToolTipText("");
+
+        javax.swing.GroupLayout panelTodosLayout = new javax.swing.GroupLayout(panelTodos);
+        panelTodos.setLayout(panelTodosLayout);
+        panelTodosLayout.setHorizontalGroup(
+            panelTodosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTodosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelTodosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(contenedorTablaTodos, javax.swing.GroupLayout.DEFAULT_SIZE, 572, Short.MAX_VALUE)
+                    .addGroup(panelTodosLayout.createSequentialGroup()
+                        .addComponent(labelIngresosTotales)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panelTodosLayout.setVerticalGroup(
+            panelTodosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTodosLayout.createSequentialGroup()
+                .addContainerGap(14, Short.MAX_VALUE)
+                .addComponent(labelIngresosTotales)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(contenedorTablaTodos, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10))
+        );
+
+        panelIngresos.addTab("Todos", panelTodos);
+
+        panelPeriodo.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+
+        tablaPeriodo.setAutoCreateRowSorter(true);
+        tablaPeriodo.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        tablaPeriodo.setForeground(new java.awt.Color(102, 102, 102));
+        tablaPeriodo.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Javier Antonio", "Humarán Peñuñuri", "12/02/1993",  new Double(1234.2)},
+                {"José Ángel ", "Solano Kirk", "31/12/2012",  new Double(233.5)},
+                {"Victor Manuel", "Martínez Ayala", "24/03/1997",  new Double(3443.3)},
+                {"Juan José ", "Pérez López", "06/08/2011",  new Double(344.4)},
+                {null, null, null,  new Double(44433.4)},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Nombre (s)", "Apellidos", "Fecha", "Cantidad"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Double.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        tablaPeriodo.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
+        tablaPeriodo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tablaPeriodo.setEditingColumn(0);
+        tablaPeriodo.setEditingRow(0);
+        tablaPeriodo.setRowHeight(20);
+        tablaPeriodo.setSelectionBackground(new java.awt.Color(153, 153, 153));
+        contenedorTablaPeriodo.setViewportView(tablaPeriodo);
+
+        labelIngresosDesde.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        labelIngresosDesde.setForeground(new java.awt.Color(102, 102, 102));
+        labelIngresosDesde.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelIngresosDesde.setText("Ingresos desde:");
+        labelIngresosDesde.setToolTipText("");
+
+        campoTextoDesde.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        campoTextoDesde.setForeground(new java.awt.Color(102, 102, 102));
+
+        labelHasta.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        labelHasta.setForeground(new java.awt.Color(102, 102, 102));
+        labelHasta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelHasta.setText("hasta:");
+        labelHasta.setToolTipText("");
+
+        campoTextoHasta.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        campoTextoHasta.setForeground(new java.awt.Color(102, 102, 102));
+
+        botonOk.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        botonOk.setForeground(new java.awt.Color(102, 102, 102));
+        botonOk.setText("Ok");
+        botonOk.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonOkActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelPeriodoLayout = new javax.swing.GroupLayout(panelPeriodo);
+        panelPeriodo.setLayout(panelPeriodoLayout);
+        panelPeriodoLayout.setHorizontalGroup(
+            panelPeriodoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelPeriodoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelPeriodoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(contenedorTablaPeriodo, javax.swing.GroupLayout.DEFAULT_SIZE, 572, Short.MAX_VALUE)
+                    .addGroup(panelPeriodoLayout.createSequentialGroup()
+                        .addComponent(labelIngresosDesde)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(campoTextoDesde, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(labelHasta)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(campoTextoHasta, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(botonOk)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        panelPeriodoLayout.setVerticalGroup(
+            panelPeriodoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelPeriodoLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panelPeriodoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelIngresosDesde)
+                    .addComponent(campoTextoDesde, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(labelHasta)
+                    .addComponent(campoTextoHasta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonOk))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(contenedorTablaPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(82, 82, 82))
+        );
+
+        panelIngresos.addTab("Periodo", panelPeriodo);
+
+        panelCliente.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+
+        labelIngresosCliente.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        labelIngresosCliente.setForeground(new java.awt.Color(102, 102, 102));
+        labelIngresosCliente.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelIngresosCliente.setText("Ingresos de:");
+        labelIngresosCliente.setToolTipText("");
+
+        tablaCliente.setAutoCreateRowSorter(true);
+        tablaCliente.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        tablaCliente.setForeground(new java.awt.Color(102, 102, 102));
+        tablaCliente.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Javier Antonio", "Humarán Peñuñuri", "12/02/1993",  new Double(1234.2)},
+                {"José Ángel ", "Solano Kirk", "31/12/2012",  new Double(233.5)},
+                {"Victor Manuel", "Martínez Ayala", "24/03/1997",  new Double(3443.3)},
+                {"Juan José ", "Pérez López", "06/08/2011",  new Double(344.4)},
+                {null, null, null,  new Double(44433.4)},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Nombre (s)", "Apellidos", "Fecha", "Cantidad"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Double.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        tablaCliente.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
+        tablaCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tablaCliente.setEditingColumn(0);
+        tablaCliente.setEditingRow(0);
+        tablaCliente.setRowHeight(20);
+        tablaCliente.setSelectionBackground(new java.awt.Color(153, 153, 153));
+        contenedorTablaCliente.setViewportView(tablaCliente);
+
+        comboCliente.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        comboCliente.setForeground(new java.awt.Color(102, 102, 102));
+        comboCliente.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Javier Antonio Humarán Peñuñuri", "José Ángel Solano Kirk", "Victor Manuel Martínez Torres" }));
+
+        javax.swing.GroupLayout panelClienteLayout = new javax.swing.GroupLayout(panelCliente);
+        panelCliente.setLayout(panelClienteLayout);
+        panelClienteLayout.setHorizontalGroup(
+            panelClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelClienteLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(contenedorTablaCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 572, Short.MAX_VALUE)
+                    .addGroup(panelClienteLayout.createSequentialGroup()
+                        .addComponent(labelIngresosCliente)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(comboCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
+        );
+        panelClienteLayout.setVerticalGroup(
+            panelClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelClienteLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addGroup(panelClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelIngresosCliente)
+                    .addComponent(comboCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(contenedorTablaCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        panelIngresos.addTab("Cliente", panelCliente);
+
+        panelTrabajo.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+
+        labelIngresosTrabajo.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        labelIngresosTrabajo.setForeground(new java.awt.Color(102, 102, 102));
+        labelIngresosTrabajo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelIngresosTrabajo.setText("Ingresos por:");
+        labelIngresosTrabajo.setToolTipText("");
+
+        comboTrabajo.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        comboTrabajo.setForeground(new java.awt.Color(102, 102, 102));
+        comboTrabajo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Extracción", "Amalgama", "Endodoncia", "Frenos" }));
+
+        tablaTrabajo.setAutoCreateRowSorter(true);
+        tablaTrabajo.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        tablaTrabajo.setForeground(new java.awt.Color(102, 102, 102));
+        tablaTrabajo.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Javier Antonio", "Humarán Peñuñuri", "12/02/1993",  new Double(1234.2)},
+                {"José Ángel ", "Solano Kirk", "31/12/2012",  new Double(233.5)},
+                {"Victor Manuel", "Martínez Ayala", "24/03/1997",  new Double(3443.3)},
+                {"Juan José ", "Pérez López", "06/08/2011",  new Double(344.4)},
+                {null, null, null,  new Double(44433.4)},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Nombre (s)", "Apellidos", "Fecha", "Cantidad"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Double.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        tablaTrabajo.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
+        tablaTrabajo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tablaTrabajo.setEditingColumn(0);
+        tablaTrabajo.setEditingRow(0);
+        tablaTrabajo.setRowHeight(20);
+        tablaTrabajo.setSelectionBackground(new java.awt.Color(153, 153, 153));
+        contenedorTablaTrabajo.setViewportView(tablaTrabajo);
+
+        javax.swing.GroupLayout panelTrabajoLayout = new javax.swing.GroupLayout(panelTrabajo);
+        panelTrabajo.setLayout(panelTrabajoLayout);
+        panelTrabajoLayout.setHorizontalGroup(
+            panelTrabajoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTrabajoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(panelTrabajoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(contenedorTablaTrabajo, javax.swing.GroupLayout.DEFAULT_SIZE, 572, Short.MAX_VALUE)
+                    .addGroup(panelTrabajoLayout.createSequentialGroup()
+                        .addComponent(labelIngresosTrabajo)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(comboTrabajo, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
+        );
+        panelTrabajoLayout.setVerticalGroup(
+            panelTrabajoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTrabajoLayout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addGroup(panelTrabajoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelIngresosTrabajo)
+                    .addComponent(comboTrabajo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(contenedorTablaTrabajo, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        panelIngresos.addTab("Trabajo", panelTrabajo);
+
+        botonSalir.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        botonSalir.setForeground(new java.awt.Color(102, 102, 102));
+        botonSalir.setText("Salir");
+        botonSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonSalirActionPerformed(evt);
+            }
+        });
+
+        panelTotalIngresos.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        labelTotal.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        labelTotal.setForeground(new java.awt.Color(102, 102, 102));
+        labelTotal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelTotal.setText("Total de Ingresos:");
+        labelTotal.setToolTipText("");
+
+        campoTextoTotal.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        campoTextoTotal.setForeground(new java.awt.Color(102, 102, 102));
+        campoTextoTotal.setEnabled(false);
+
+        javax.swing.GroupLayout panelTotalIngresosLayout = new javax.swing.GroupLayout(panelTotalIngresos);
+        panelTotalIngresos.setLayout(panelTotalIngresosLayout);
+        panelTotalIngresosLayout.setHorizontalGroup(
+            panelTotalIngresosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTotalIngresosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(labelTotal)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(campoTextoTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        panelTotalIngresosLayout.setVerticalGroup(
+            panelTotalIngresosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTotalIngresosLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(panelTotalIngresosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(labelTotal)
+                    .addComponent(campoTextoTotal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(panelIngresos)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(panelTotalIngresos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(botonSalir)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(panelIngresos, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(panelTotalIngresos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonSalir))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        panelIngresos.getAccessibleContext().setAccessibleName("");
+
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void botonOkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonOkActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botonOkActionPerformed
+
+    private void botonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonSalirActionPerformed
+        PantallaPrincipal abrirPrincipal = new PantallaPrincipal();
+        abrirPrincipal.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_botonSalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -77,5 +524,32 @@ public class AdministrarIngresos extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botonOk;
+    private javax.swing.JButton botonSalir;
+    private javax.swing.JTextField campoTextoDesde;
+    private javax.swing.JTextField campoTextoHasta;
+    private javax.swing.JTextField campoTextoTotal;
+    private javax.swing.JComboBox comboCliente;
+    private javax.swing.JComboBox comboTrabajo;
+    private javax.swing.JScrollPane contenedorTablaCliente;
+    private javax.swing.JScrollPane contenedorTablaPeriodo;
+    private javax.swing.JScrollPane contenedorTablaTodos;
+    private javax.swing.JScrollPane contenedorTablaTrabajo;
+    private javax.swing.JLabel labelHasta;
+    private javax.swing.JLabel labelIngresosCliente;
+    private javax.swing.JLabel labelIngresosDesde;
+    private javax.swing.JLabel labelIngresosTotales;
+    private javax.swing.JLabel labelIngresosTrabajo;
+    private javax.swing.JLabel labelTotal;
+    private javax.swing.JPanel panelCliente;
+    private javax.swing.JTabbedPane panelIngresos;
+    private javax.swing.JPanel panelPeriodo;
+    private javax.swing.JPanel panelTodos;
+    private javax.swing.JPanel panelTotalIngresos;
+    private javax.swing.JPanel panelTrabajo;
+    private javax.swing.JTable tablaCliente;
+    private javax.swing.JTable tablaClientes;
+    private javax.swing.JTable tablaPeriodo;
+    private javax.swing.JTable tablaTrabajo;
     // End of variables declaration//GEN-END:variables
 }

@@ -26,29 +26,29 @@ public class AgregarCliente extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        labelClientes1 = new javax.swing.JLabel();
+        labelNombres = new javax.swing.JLabel();
         botonAgregarImagen = new javax.swing.JButton();
-        labelClientes2 = new javax.swing.JLabel();
-        labelClientes3 = new javax.swing.JLabel();
-        labelClientes4 = new javax.swing.JLabel();
-        labelClientes5 = new javax.swing.JLabel();
+        labelApellidoPaterno = new javax.swing.JLabel();
+        labelApellidoMaterno = new javax.swing.JLabel();
+        labelGenero = new javax.swing.JLabel();
+        labelClave = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        labelClientes6 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        labelClientes7 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
+        labelFechaAlta = new javax.swing.JLabel();
+        campoTextoClave = new javax.swing.JTextField();
+        campoTextoFechaAlta = new javax.swing.JTextField();
+        labelFechaNacimiento = new javax.swing.JLabel();
+        campoTextoFechaNacimiento = new javax.swing.JTextField();
+        comboGenero = new javax.swing.JComboBox();
+        campoTextoApellidoMaterno = new javax.swing.JTextField();
+        campoTextoApellidoPaterno = new javax.swing.JTextField();
+        campoTextoNombres = new javax.swing.JTextField();
         jSeparator2 = new javax.swing.JSeparator();
-        labelClientes8 = new javax.swing.JLabel();
-        labelClientes9 = new javax.swing.JLabel();
-        labelClientes10 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
+        labelDomicilio = new javax.swing.JLabel();
+        labelCelular = new javax.swing.JLabel();
+        labelEmail = new javax.swing.JLabel();
+        campoTextoDomicilio = new javax.swing.JTextField();
+        campoTextoCelular = new javax.swing.JTextField();
+        campoTextoEmail = new javax.swing.JTextField();
         botonNuevoCliente = new javax.swing.JButton();
         botonGuardarCliente = new javax.swing.JButton();
         botonSalir = new javax.swing.JButton();
@@ -57,83 +57,93 @@ public class AgregarCliente extends javax.swing.JFrame {
         setTitle("Nuevo Cliente");
         setResizable(false);
 
-        labelClientes1.setForeground(new java.awt.Color(102, 102, 102));
-        labelClientes1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelClientes1.setText("Nombre(s):");
+        labelNombres.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        labelNombres.setForeground(new java.awt.Color(102, 102, 102));
+        labelNombres.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelNombres.setText("Nombre(s):");
 
         botonAgregarImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazUsuario/img/AgregarImagen (1).png"))); // NOI18N
         botonAgregarImagen.setToolTipText("Agrega una imagen del cliente");
 
-        labelClientes2.setForeground(new java.awt.Color(102, 102, 102));
-        labelClientes2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelClientes2.setText("Apellido Paterno:");
+        labelApellidoPaterno.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        labelApellidoPaterno.setForeground(new java.awt.Color(102, 102, 102));
+        labelApellidoPaterno.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelApellidoPaterno.setText("Apellido Paterno:");
 
-        labelClientes3.setForeground(new java.awt.Color(102, 102, 102));
-        labelClientes3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelClientes3.setText("Apellido Materno:");
+        labelApellidoMaterno.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        labelApellidoMaterno.setForeground(new java.awt.Color(102, 102, 102));
+        labelApellidoMaterno.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelApellidoMaterno.setText("Apellido Materno:");
 
-        labelClientes4.setForeground(new java.awt.Color(102, 102, 102));
-        labelClientes4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelClientes4.setText("Género:");
+        labelGenero.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        labelGenero.setForeground(new java.awt.Color(102, 102, 102));
+        labelGenero.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelGenero.setText("Género:");
 
-        labelClientes5.setForeground(new java.awt.Color(102, 102, 102));
-        labelClientes5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelClientes5.setText("Clave:");
+        labelClave.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        labelClave.setForeground(new java.awt.Color(102, 102, 102));
+        labelClave.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelClave.setText("Clave:");
 
-        labelClientes6.setForeground(new java.awt.Color(102, 102, 102));
-        labelClientes6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelClientes6.setText("Fecha de Alta:");
+        labelFechaAlta.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        labelFechaAlta.setForeground(new java.awt.Color(102, 102, 102));
+        labelFechaAlta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelFechaAlta.setText("Fecha de Alta:");
 
-        jTextField2.setFont(new java.awt.Font("Roboto", 0, 11)); // NOI18N
-        jTextField2.setForeground(new java.awt.Color(102, 102, 102));
-        jTextField2.setText("jTextField2");
-        jTextField2.setEnabled(false);
+        campoTextoClave.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        campoTextoClave.setForeground(new java.awt.Color(102, 102, 102));
+        campoTextoClave.setText("jTextField2");
+        campoTextoClave.setEnabled(false);
 
-        jTextField3.setFont(new java.awt.Font("Roboto", 0, 11)); // NOI18N
-        jTextField3.setForeground(new java.awt.Color(102, 102, 102));
-        jTextField3.setText("jTextField2");
-        jTextField3.setEnabled(false);
+        campoTextoFechaAlta.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        campoTextoFechaAlta.setForeground(new java.awt.Color(102, 102, 102));
+        campoTextoFechaAlta.setText("jTextField2");
+        campoTextoFechaAlta.setEnabled(false);
 
-        labelClientes7.setForeground(new java.awt.Color(102, 102, 102));
-        labelClientes7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelClientes7.setText("Fecha de Nacimiento:");
+        labelFechaNacimiento.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        labelFechaNacimiento.setForeground(new java.awt.Color(102, 102, 102));
+        labelFechaNacimiento.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelFechaNacimiento.setText("Fecha de Nacimiento:");
 
-        jTextField4.setFont(new java.awt.Font("Roboto", 0, 11)); // NOI18N
-        jTextField4.setForeground(new java.awt.Color(102, 102, 102));
+        campoTextoFechaNacimiento.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        campoTextoFechaNacimiento.setForeground(new java.awt.Color(102, 102, 102));
 
-        jComboBox1.setFont(new java.awt.Font("Roboto", 0, 11)); // NOI18N
-        jComboBox1.setForeground(new java.awt.Color(102, 102, 102));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Hombre", "Mujer" }));
+        comboGenero.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        comboGenero.setForeground(new java.awt.Color(102, 102, 102));
+        comboGenero.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Hombre", "Mujer" }));
 
-        jTextField5.setFont(new java.awt.Font("Roboto", 0, 11)); // NOI18N
-        jTextField5.setForeground(new java.awt.Color(102, 102, 102));
+        campoTextoApellidoMaterno.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        campoTextoApellidoMaterno.setForeground(new java.awt.Color(102, 102, 102));
 
-        jTextField6.setFont(new java.awt.Font("Roboto", 0, 11)); // NOI18N
-        jTextField6.setForeground(new java.awt.Color(102, 102, 102));
+        campoTextoApellidoPaterno.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        campoTextoApellidoPaterno.setForeground(new java.awt.Color(102, 102, 102));
 
-        jTextField7.setFont(new java.awt.Font("Roboto", 0, 11)); // NOI18N
-        jTextField7.setForeground(new java.awt.Color(102, 102, 102));
+        campoTextoNombres.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        campoTextoNombres.setForeground(new java.awt.Color(102, 102, 102));
 
-        labelClientes8.setForeground(new java.awt.Color(102, 102, 102));
-        labelClientes8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelClientes8.setText("Domicilio:");
+        labelDomicilio.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        labelDomicilio.setForeground(new java.awt.Color(102, 102, 102));
+        labelDomicilio.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelDomicilio.setText("Domicilio:");
 
-        labelClientes9.setForeground(new java.awt.Color(102, 102, 102));
-        labelClientes9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelClientes9.setText("Celular:");
+        labelCelular.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        labelCelular.setForeground(new java.awt.Color(102, 102, 102));
+        labelCelular.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelCelular.setText("Celular:");
 
-        labelClientes10.setForeground(new java.awt.Color(102, 102, 102));
-        labelClientes10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        labelClientes10.setText("Email:");
+        labelEmail.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        labelEmail.setForeground(new java.awt.Color(102, 102, 102));
+        labelEmail.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelEmail.setText("Email:");
 
-        jTextField8.setFont(new java.awt.Font("Roboto", 0, 11)); // NOI18N
-        jTextField8.setForeground(new java.awt.Color(102, 102, 102));
+        campoTextoDomicilio.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        campoTextoDomicilio.setForeground(new java.awt.Color(102, 102, 102));
 
-        jTextField9.setFont(new java.awt.Font("Roboto", 0, 11)); // NOI18N
-        jTextField9.setForeground(new java.awt.Color(102, 102, 102));
+        campoTextoCelular.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        campoTextoCelular.setForeground(new java.awt.Color(102, 102, 102));
 
-        jTextField10.setFont(new java.awt.Font("Roboto", 0, 11)); // NOI18N
-        jTextField10.setForeground(new java.awt.Color(102, 102, 102));
+        campoTextoEmail.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        campoTextoEmail.setForeground(new java.awt.Color(102, 102, 102));
 
         botonNuevoCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazUsuario/img/AgregarCliente.png"))); // NOI18N
         botonNuevoCliente.setPreferredSize(new java.awt.Dimension(73, 73));
@@ -166,28 +176,28 @@ public class AgregarCliente extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(labelClientes5)
+                                .addComponent(labelClave)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(campoTextoClave, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(labelClientes6)
+                                .addComponent(labelFechaAlta)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(campoTextoFechaAlta, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 305, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(labelClientes4)
-                                    .addComponent(labelClientes3)
-                                    .addComponent(labelClientes2)
-                                    .addComponent(labelClientes1)
-                                    .addComponent(labelClientes7))
+                                    .addComponent(labelGenero)
+                                    .addComponent(labelApellidoMaterno)
+                                    .addComponent(labelApellidoPaterno)
+                                    .addComponent(labelNombres)
+                                    .addComponent(labelFechaNacimiento))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jTextField7)
-                                    .addComponent(jTextField6)
-                                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(campoTextoFechaNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(campoTextoNombres)
+                                    .addComponent(campoTextoApellidoPaterno)
+                                    .addComponent(campoTextoApellidoMaterno, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(comboGenero, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
@@ -196,17 +206,17 @@ public class AgregarCliente extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(labelClientes9)
+                                        .addComponent(labelCelular)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(campoTextoCelular, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(18, 18, 18)
-                                        .addComponent(labelClientes10)
+                                        .addComponent(labelEmail)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField10))
+                                        .addComponent(campoTextoEmail))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(labelClientes8)
+                                        .addComponent(labelDomicilio)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField8)))
+                                        .addComponent(campoTextoDomicilio)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(botonNuevoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -222,32 +232,32 @@ public class AgregarCliente extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(labelClientes5)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(labelClientes6)
-                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(labelClave)
+                            .addComponent(campoTextoClave, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(labelFechaAlta)
+                            .addComponent(campoTextoFechaAlta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(2, 2, 2)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(labelClientes1)
-                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(labelNombres)
+                            .addComponent(campoTextoNombres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(labelClientes2)
-                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(labelApellidoPaterno)
+                            .addComponent(campoTextoApellidoPaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(labelClientes3)
-                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(labelApellidoMaterno)
+                            .addComponent(campoTextoApellidoMaterno, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(labelClientes4, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(labelGenero, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(comboGenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(labelClientes7, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(campoTextoFechaNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(labelFechaNacimiento, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(botonAgregarImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -255,14 +265,14 @@ public class AgregarCliente extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(labelClientes8)
-                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(labelDomicilio)
+                            .addComponent(campoTextoDomicilio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(labelClientes9)
-                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(labelClientes10)
-                            .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(labelCelular)
+                            .addComponent(campoTextoCelular, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(labelEmail)
+                            .addComponent(campoTextoEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(botonNuevoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(botonGuardarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(botonSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -275,14 +285,10 @@ public class AgregarCliente extends javax.swing.JFrame {
 
     private void botonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonSalirActionPerformed
         dispose();
-        AdministrarClientes abrirClientes = new AdministrarClientes();
-        abrirClientes.setVisible(true);
     }//GEN-LAST:event_botonSalirActionPerformed
 
     private void botonGuardarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonGuardarClienteActionPerformed
         dispose();
-        AdministrarClientes abrirClientes = new AdministrarClientes();
-        abrirClientes.setVisible(true);
     }//GEN-LAST:event_botonGuardarClienteActionPerformed
 
     /**
@@ -324,27 +330,27 @@ public class AgregarCliente extends javax.swing.JFrame {
     private javax.swing.JButton botonGuardarCliente;
     private javax.swing.JButton botonNuevoCliente;
     private javax.swing.JButton botonSalir;
-    private javax.swing.JComboBox jComboBox1;
+    private javax.swing.JTextField campoTextoApellidoMaterno;
+    private javax.swing.JTextField campoTextoApellidoPaterno;
+    private javax.swing.JTextField campoTextoCelular;
+    private javax.swing.JTextField campoTextoClave;
+    private javax.swing.JTextField campoTextoDomicilio;
+    private javax.swing.JTextField campoTextoEmail;
+    private javax.swing.JTextField campoTextoFechaAlta;
+    private javax.swing.JTextField campoTextoFechaNacimiento;
+    private javax.swing.JTextField campoTextoNombres;
+    private javax.swing.JComboBox comboGenero;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
-    private javax.swing.JLabel labelClientes1;
-    private javax.swing.JLabel labelClientes10;
-    private javax.swing.JLabel labelClientes2;
-    private javax.swing.JLabel labelClientes3;
-    private javax.swing.JLabel labelClientes4;
-    private javax.swing.JLabel labelClientes5;
-    private javax.swing.JLabel labelClientes6;
-    private javax.swing.JLabel labelClientes7;
-    private javax.swing.JLabel labelClientes8;
-    private javax.swing.JLabel labelClientes9;
+    private javax.swing.JLabel labelApellidoMaterno;
+    private javax.swing.JLabel labelApellidoPaterno;
+    private javax.swing.JLabel labelCelular;
+    private javax.swing.JLabel labelClave;
+    private javax.swing.JLabel labelDomicilio;
+    private javax.swing.JLabel labelEmail;
+    private javax.swing.JLabel labelFechaAlta;
+    private javax.swing.JLabel labelFechaNacimiento;
+    private javax.swing.JLabel labelGenero;
+    private javax.swing.JLabel labelNombres;
     // End of variables declaration//GEN-END:variables
 }

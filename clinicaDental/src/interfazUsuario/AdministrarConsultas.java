@@ -26,21 +26,147 @@ public class AdministrarConsultas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        tablaConsultas = new javax.swing.JScrollPane();
+        tablaConsultas1 = new javax.swing.JTable();
+        labelConsultas = new javax.swing.JLabel();
+        botonSalir = new javax.swing.JButton();
+        botonEliminarConsulta = new javax.swing.JButton();
+        botonAgregarConsulta = new javax.swing.JButton();
+        botonInformacionConsulta = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setTitle("Consultas");
+        setResizable(false);
+
+        tablaConsultas1.setAutoCreateRowSorter(true);
+        tablaConsultas1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        tablaConsultas1.setForeground(new java.awt.Color(102, 102, 102));
+        tablaConsultas1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"Javier Humarán",  new Integer(1), "12/12/1212", "Extraccion",  new Double(400.2)},
+                {"José Angel Solano",  new Integer(2), "12/12/1212", "Limpieza",  new Double(200.5)},
+                {"Victor Martínez",  new Integer(2), "12/12/1212", "Endodoncia",  new Double(400.5)},
+                {"Javier Humarán",  new Integer(3), "12/12/1212", "Brakets",  new Double(600.0)},
+                {"José Ángel Solano",  new Integer(4), "12/12/1212", "Trabajo",  new Double(199.0)},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "Cliente", "Pieza", "Fecha Consulta", "Trabajo Realizado", "Costo"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.String.class, java.lang.Double.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        tablaConsultas1.setGridColor(new java.awt.Color(153, 153, 153));
+        tablaConsultas1.setRowHeight(20);
+        tablaConsultas1.setSelectionBackground(new java.awt.Color(153, 153, 153));
+        tablaConsultas.setViewportView(tablaConsultas1);
+
+        labelConsultas.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
+        labelConsultas.setForeground(new java.awt.Color(102, 102, 102));
+        labelConsultas.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelConsultas.setText("Consultas");
+
+        botonSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazUsuario/img/Salir (1).png"))); // NOI18N
+        botonSalir.setPreferredSize(new java.awt.Dimension(73, 73));
+        botonSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonSalirActionPerformed(evt);
+            }
+        });
+
+        botonEliminarConsulta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazUsuario/img/Eliminar.png"))); // NOI18N
+        botonEliminarConsulta.setPreferredSize(new java.awt.Dimension(73, 73));
+        botonEliminarConsulta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonEliminarConsultaActionPerformed(evt);
+            }
+        });
+
+        botonAgregarConsulta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazUsuario/img/Nuevo.png"))); // NOI18N
+        botonAgregarConsulta.setPreferredSize(new java.awt.Dimension(73, 73));
+        botonAgregarConsulta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonAgregarConsultaActionPerformed(evt);
+            }
+        });
+
+        botonInformacionConsulta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazUsuario/img/Informacion.png"))); // NOI18N
+        botonInformacionConsulta.setPreferredSize(new java.awt.Dimension(73, 73));
+        botonInformacionConsulta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonInformacionConsultaActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tablaConsultas)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(labelConsultas)
+                        .addGap(0, 635, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(botonAgregarConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(botonInformacionConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(botonEliminarConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(botonSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(labelConsultas)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tablaConsultas, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botonSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonEliminarConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonAgregarConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonInformacionConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void botonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonSalirActionPerformed
+        dispose();
+        PantallaPrincipal abrirMenu = new PantallaPrincipal();
+        abrirMenu.setVisible(true);
+    }//GEN-LAST:event_botonSalirActionPerformed
+
+    private void botonEliminarConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonEliminarConsultaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botonEliminarConsultaActionPerformed
+
+    private void botonAgregarConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonAgregarConsultaActionPerformed
+        AgregarConsulta nuevaConsulta = new AgregarConsulta();
+        nuevaConsulta.setVisible(true);
+    }//GEN-LAST:event_botonAgregarConsultaActionPerformed
+
+    private void botonInformacionConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonInformacionConsultaActionPerformed
+        InformacionConsulta abrirConsulta = new InformacionConsulta();
+        abrirConsulta.setVisible(true);
+    }//GEN-LAST:event_botonInformacionConsultaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -77,5 +203,12 @@ public class AdministrarConsultas extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botonAgregarConsulta;
+    private javax.swing.JButton botonEliminarConsulta;
+    private javax.swing.JButton botonInformacionConsulta;
+    private javax.swing.JButton botonSalir;
+    private javax.swing.JLabel labelConsultas;
+    private javax.swing.JScrollPane tablaConsultas;
+    private javax.swing.JTable tablaConsultas1;
     // End of variables declaration//GEN-END:variables
 }

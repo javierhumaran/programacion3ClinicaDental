@@ -26,21 +26,173 @@ public class AdministrarMateriales extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        labelClientes = new javax.swing.JLabel();
+        panelClientes = new javax.swing.JScrollPane();
+        tablaClientes = new javax.swing.JTable();
+        botonEliminarCliente = new javax.swing.JButton();
+        botonSalir = new javax.swing.JButton();
+        botonNuevoCliente = new javax.swing.JButton();
+        botonNuevoCliente1 = new javax.swing.JButton();
+        botonNuevoCliente2 = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Materiales");
+        setResizable(false);
+
+        labelClientes.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
+        labelClientes.setForeground(new java.awt.Color(102, 102, 102));
+        labelClientes.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelClientes.setText("Materiales");
+
+        tablaClientes.setAutoCreateRowSorter(true);
+        tablaClientes.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        tablaClientes.setForeground(new java.awt.Color(102, 102, 102));
+        tablaClientes.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"1233", "Material1",  new Double(11.12), "Unidad"},
+                {"ASQ23", "Material2",  new Double(122.22), "Unidad"},
+                {"GE221", "Material3",  new Double(11.2), "Unidad"},
+                {"ER32", "Material4",  new Double(1221.0), "Unidad"},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Clave", "Nombre", "Cantidad", "Unidad Medida"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.Double.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        tablaClientes.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_ALL_COLUMNS);
+        tablaClientes.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        tablaClientes.setEditingColumn(0);
+        tablaClientes.setEditingRow(0);
+        tablaClientes.setRowHeight(20);
+        tablaClientes.setSelectionBackground(new java.awt.Color(153, 153, 153));
+        panelClientes.setViewportView(tablaClientes);
+
+        botonEliminarCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazUsuario/img/Eliminar.png"))); // NOI18N
+        botonEliminarCliente.setPreferredSize(new java.awt.Dimension(73, 73));
+        botonEliminarCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonEliminarClienteActionPerformed(evt);
+            }
+        });
+
+        botonSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazUsuario/img/Salir (1).png"))); // NOI18N
+        botonSalir.setPreferredSize(new java.awt.Dimension(73, 73));
+        botonSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonSalirActionPerformed(evt);
+            }
+        });
+
+        botonNuevoCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazUsuario/img/AgregarMaterial.png"))); // NOI18N
+        botonNuevoCliente.setPreferredSize(new java.awt.Dimension(73, 73));
+        botonNuevoCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonNuevoClienteActionPerformed(evt);
+            }
+        });
+
+        botonNuevoCliente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazUsuario/img/Nuevo.png"))); // NOI18N
+        botonNuevoCliente1.setPreferredSize(new java.awt.Dimension(73, 73));
+        botonNuevoCliente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonNuevoCliente1ActionPerformed(evt);
+            }
+        });
+
+        botonNuevoCliente2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/interfazUsuario/img/Informacion.png"))); // NOI18N
+        botonNuevoCliente2.setPreferredSize(new java.awt.Dimension(73, 73));
+        botonNuevoCliente2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonNuevoCliente2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(botonNuevoCliente1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(botonNuevoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(botonNuevoCliente2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(botonEliminarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(botonSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(panelClientes, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 488, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(labelClientes)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(labelClientes)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
+                .addComponent(panelClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(botonNuevoCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonEliminarCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonNuevoCliente1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botonNuevoCliente2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void botonEliminarClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonEliminarClienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botonEliminarClienteActionPerformed
+
+    private void botonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonSalirActionPerformed
+        dispose();
+        PantallaPrincipal abrirMenu = new PantallaPrincipal();
+        abrirMenu.setVisible(true);
+    }//GEN-LAST:event_botonSalirActionPerformed
+
+    private void botonNuevoClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonNuevoClienteActionPerformed
+        AgregarMaterial nuevoMaterial = new AgregarMaterial();
+        nuevoMaterial.setVisible(true);
+    }//GEN-LAST:event_botonNuevoClienteActionPerformed
+
+    private void botonNuevoCliente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonNuevoCliente1ActionPerformed
+        NuevoMaterial abastecer = new NuevoMaterial();
+        abastecer.setVisible(true);
+    }//GEN-LAST:event_botonNuevoCliente1ActionPerformed
+
+    private void botonNuevoCliente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonNuevoCliente2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botonNuevoCliente2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -77,5 +229,13 @@ public class AdministrarMateriales extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton botonEliminarCliente;
+    private javax.swing.JButton botonNuevoCliente;
+    private javax.swing.JButton botonNuevoCliente1;
+    private javax.swing.JButton botonNuevoCliente2;
+    private javax.swing.JButton botonSalir;
+    private javax.swing.JLabel labelClientes;
+    private javax.swing.JScrollPane panelClientes;
+    private javax.swing.JTable tablaClientes;
     // End of variables declaration//GEN-END:variables
 }

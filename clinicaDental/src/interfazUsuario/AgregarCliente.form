@@ -34,30 +34,30 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="labelClientes5" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelClave" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField2" min="-2" pref="80" max="-2" attributes="0"/>
+                              <Component id="campoTextoClave" min="-2" pref="80" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="labelClientes6" min="-2" max="-2" attributes="0"/>
+                              <Component id="labelFechaAlta" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jTextField3" min="-2" pref="80" max="-2" attributes="0"/>
+                              <Component id="campoTextoFechaAlta" min="-2" pref="80" max="-2" attributes="0"/>
                           </Group>
                           <Component id="jSeparator1" min="-2" pref="305" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="labelClientes4" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="labelClientes3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="labelClientes2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="labelClientes1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="labelClientes7" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelGenero" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelApellidoMaterno" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelApellidoPaterno" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelNombres" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="labelFechaNacimiento" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jTextField4" min="-2" pref="80" max="-2" attributes="0"/>
-                                  <Component id="jTextField7" max="32767" attributes="0"/>
-                                  <Component id="jTextField6" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jTextField5" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
-                                  <Component id="jComboBox1" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
+                                  <Component id="campoTextoFechaNacimiento" min="-2" pref="80" max="-2" attributes="0"/>
+                                  <Component id="campoTextoNombres" max="32767" attributes="0"/>
+                                  <Component id="campoTextoApellidoPaterno" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="campoTextoApellidoMaterno" alignment="0" min="-2" pref="150" max="-2" attributes="0"/>
+                                  <Component id="comboGenero" alignment="0" min="-2" pref="80" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -70,18 +70,18 @@
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="labelClientes9" min="-2" max="-2" attributes="0"/>
+                                      <Component id="labelCelular" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jTextField9" min="-2" pref="80" max="-2" attributes="0"/>
+                                      <Component id="campoTextoCelular" min="-2" pref="80" max="-2" attributes="0"/>
                                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                                      <Component id="labelClientes10" min="-2" max="-2" attributes="0"/>
+                                      <Component id="labelEmail" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jTextField10" max="32767" attributes="0"/>
+                                      <Component id="campoTextoEmail" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="labelClientes8" min="-2" max="-2" attributes="0"/>
+                                      <Component id="labelDomicilio" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="jTextField8" max="32767" attributes="0"/>
+                                      <Component id="campoTextoDomicilio" max="32767" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -105,37 +105,37 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="labelClientes5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="labelClientes6" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelClave" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campoTextoClave" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelFechaAlta" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campoTextoFechaAlta" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="labelClientes1" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelNombres" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campoTextoNombres" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="labelClientes2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelApellidoPaterno" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campoTextoApellidoPaterno" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="labelClientes3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelApellidoMaterno" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campoTextoApellidoMaterno" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="labelClientes4" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
-                          <Component id="jComboBox1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelGenero" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="comboGenero" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jTextField4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="labelClientes7" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
+                          <Component id="campoTextoFechaNacimiento" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelFechaNacimiento" alignment="3" min="-2" pref="14" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Component id="botonAgregarImagen" alignment="0" min="-2" pref="229" max="-2" attributes="0"/>
@@ -146,15 +146,15 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="labelClientes8" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelDomicilio" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campoTextoDomicilio" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="labelClientes9" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField9" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="labelClientes10" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jTextField10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelCelular" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campoTextoCelular" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="labelEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campoTextoEmail" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Component id="botonNuevoCliente" min="-2" pref="50" max="-2" attributes="0"/>
@@ -167,8 +167,11 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="labelClientes1">
+    <Component class="javax.swing.JLabel" name="labelNombres">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="14" style="0"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
         </Property>
@@ -184,8 +187,11 @@
         <Property name="toolTipText" type="java.lang.String" value="Agrega una imagen del cliente"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="labelClientes2">
+    <Component class="javax.swing.JLabel" name="labelApellidoPaterno">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="14" style="0"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
         </Property>
@@ -193,8 +199,11 @@
         <Property name="text" type="java.lang.String" value="Apellido Paterno:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="labelClientes3">
+    <Component class="javax.swing.JLabel" name="labelApellidoMaterno">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="14" style="0"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
         </Property>
@@ -202,8 +211,11 @@
         <Property name="text" type="java.lang.String" value="Apellido Materno:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="labelClientes4">
+    <Component class="javax.swing.JLabel" name="labelGenero">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="14" style="0"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
         </Property>
@@ -211,8 +223,11 @@
         <Property name="text" type="java.lang.String" value="G&#xe9;nero:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="labelClientes5">
+    <Component class="javax.swing.JLabel" name="labelClave">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="14" style="0"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
         </Property>
@@ -222,8 +237,11 @@
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator1">
     </Component>
-    <Component class="javax.swing.JLabel" name="labelClientes6">
+    <Component class="javax.swing.JLabel" name="labelFechaAlta">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="14" style="0"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
         </Property>
@@ -231,10 +249,10 @@
         <Property name="text" type="java.lang.String" value="Fecha de Alta:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField2">
+    <Component class="javax.swing.JTextField" name="campoTextoClave">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Roboto" size="11" style="0"/>
+          <Font name="Roboto" size="14" style="0"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
@@ -243,10 +261,10 @@
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField3">
+    <Component class="javax.swing.JTextField" name="campoTextoFechaAlta">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Roboto" size="11" style="0"/>
+          <Font name="Roboto" size="14" style="0"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
@@ -255,8 +273,11 @@
         <Property name="enabled" type="boolean" value="false"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="labelClientes7">
+    <Component class="javax.swing.JLabel" name="labelFechaNacimiento">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="14" style="0"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
         </Property>
@@ -264,20 +285,20 @@
         <Property name="text" type="java.lang.String" value="Fecha de Nacimiento:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField4">
+    <Component class="javax.swing.JTextField" name="campoTextoFechaNacimiento">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Roboto" size="11" style="0"/>
+          <Font name="Roboto" size="14" style="0"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox1">
+    <Component class="javax.swing.JComboBox" name="comboGenero">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Roboto" size="11" style="0"/>
+          <Font name="Roboto" size="14" style="0"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
@@ -290,30 +311,30 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField5">
+    <Component class="javax.swing.JTextField" name="campoTextoApellidoMaterno">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Roboto" size="11" style="0"/>
+          <Font name="Roboto" size="14" style="0"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField6">
+    <Component class="javax.swing.JTextField" name="campoTextoApellidoPaterno">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Roboto" size="11" style="0"/>
+          <Font name="Roboto" size="14" style="0"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField7">
+    <Component class="javax.swing.JTextField" name="campoTextoNombres">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Roboto" size="11" style="0"/>
+          <Font name="Roboto" size="14" style="0"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
@@ -322,8 +343,11 @@
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator2">
     </Component>
-    <Component class="javax.swing.JLabel" name="labelClientes8">
+    <Component class="javax.swing.JLabel" name="labelDomicilio">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="14" style="0"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
         </Property>
@@ -331,8 +355,11 @@
         <Property name="text" type="java.lang.String" value="Domicilio:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="labelClientes9">
+    <Component class="javax.swing.JLabel" name="labelCelular">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="14" style="0"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
         </Property>
@@ -340,8 +367,11 @@
         <Property name="text" type="java.lang.String" value="Celular:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="labelClientes10">
+    <Component class="javax.swing.JLabel" name="labelEmail">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto" size="14" style="0"/>
+        </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
         </Property>
@@ -349,30 +379,30 @@
         <Property name="text" type="java.lang.String" value="Email:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField8">
+    <Component class="javax.swing.JTextField" name="campoTextoDomicilio">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Roboto" size="11" style="0"/>
+          <Font name="Roboto" size="14" style="0"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField9">
+    <Component class="javax.swing.JTextField" name="campoTextoCelular">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Roboto" size="11" style="0"/>
+          <Font name="Roboto" size="14" style="0"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField10">
+    <Component class="javax.swing.JTextField" name="campoTextoEmail">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Roboto" size="11" style="0"/>
+          <Font name="Roboto" size="14" style="0"/>
         </Property>
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="66" green="66" red="66" type="rgb"/>
